@@ -4,8 +4,9 @@ env:
 script:
   - make
   - make test
-services:
-  - redis
+deploy:
+    bash:
+        command: salt-cpexec cap production deploy
 publish:
     swift:
         username: eric.robibaro@radialpoint.com
