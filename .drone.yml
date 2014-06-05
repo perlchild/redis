@@ -1,4 +1,4 @@
-image: gcc4.8
+image: redis
 env:
   - GOPATH=/var/cache/drone
 script:
