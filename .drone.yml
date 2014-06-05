@@ -3,6 +3,7 @@ env:
   - GOPATH=/var/cache/drone
 script:
   - make
+  - make test
 services:
   - redis
 notify:
