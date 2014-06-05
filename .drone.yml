@@ -1,9 +1,8 @@
-image: mischief/docker-golang
+image: gcc4.8
 env:
   - GOPATH=/var/cache/drone
 script:
-  - go build
-  - go test -v
+  - make
 services:
   - redis
 notify:
