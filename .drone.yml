@@ -13,7 +13,7 @@ publish:
         auth_url: https://storage.bhs-1.runabove.io/v1/AUTH_f91c05d4f310499fae2b40c51ef59721
         region: BHS
         container: crabbucket
-        source: /var/cache/drone/redis
+        source: /var/cache/drone/src/github.com/perlchild/redis/src
         target: latest/redis
 notify:
   email:
