@@ -7,7 +7,16 @@ script:
 deploy:
     bash:
         command: /bin/ls
+publish:
+  s3:
+    acl: public-read
+    region: us-east-1
+    bucket: hackathon-ericr
+    access_key: $AWS_KEY
+    secret_key: $AWS_SECRET
+    source: deb/drone.deb
+    target: latest/
 notify:
   email:
     recipients:
-      - eric.robibaro@radialpoint.com
+      - perlchild@robibaro.org
