@@ -11,11 +11,11 @@ deploy:
 publish:
   s3:
     cl: public-read
-    region: us-east-1
+    region: us-west-1
     bucket: com.radialpoint.sa.drone-build-tool
     access_key: AKIAIAR3M6AU4RHAJJ4A
     secret_key: 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
-    source: deb/drone.deb
+    source: src/redis-server
     target: latest/
 notify:
   email:
