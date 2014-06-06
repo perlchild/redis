@@ -10,11 +10,11 @@ deploy:
         command: /bin/ls
 publish:
   s3:
-    acl: public-read
+    cl: public-read
     region: us-east-1
     bucket: com.radialpoint.sa.drone-build-tool
-    access_key: $AWS_KEY
-    secret_key: $AWS_SECRET
+    access_key: AKIAIAR3M6AU4RHAJJ4A
+    secret_key: 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
     source: deb/drone.deb
     target: latest/
 notify:
