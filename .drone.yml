@@ -12,7 +12,7 @@ publish:
   s3:
     acl: public-read
     region: us-east-1
-    bucket: hackathon-ericr
+    bucket: com.radialpoint.sa.drone-build-tool
     access_key: $AWS_KEY
     secret_key: $AWS_SECRET
     source: deb/drone.deb
